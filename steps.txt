@@ -1,0 +1,26 @@
+Installed Ubuntu & Personalized...
+(This takes about 1 hour)
+- Did not encrypt drive, encrypted home directory
+- Enable bidirectional copy/paste
+- Remove from launcher: Amazon, Word, Excel, Slides
+- Set VM pw <> host pw
+- Disable screen saver & screen lock
+- Disable unity online search
+- Terminal - lock to launcher
+- Change file browser preferences to List View
+- Install vim (but not git)
+- Add border around windows
+Edit: sudo vim /usr/share/themes/Ambiance/gtk-3.0/apps/unity.css
+Old text: UnityDecoration-extents: 28px 0 0 0;
+New text: UnityDecoration-extents: 28px 1px 1px 1px;
+- Disable overlay scrollbars
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+- Install .inputrc & .vimrc from github.com/SimonJester/linux-setups
+- Add to cmd line history:
+df -h; uname -r; dpkg -l |grep linux-image
+#sudo apt-get purge linux-image-3.13.0-76-generic
+sudo apt-get clean; sudo apt-get autoremove -y; sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
+- Install guest additions
+- Re-size desktop
+- Purge old kernel if needed
+- Snapshot VM
